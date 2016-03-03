@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var date = new Date();
+		var _date = new Date();
+		_date.setTime(date.getTime() -1000*3600*24);
+		function getStamp(date){
+			var month = date.getMonth() + 1;
+			var day = date.getDate();
+			date = month + '-' + day;
+			return date;
+		}
+		console.log(getStamp(_date))
+	</script>
+</body>
+</html>
